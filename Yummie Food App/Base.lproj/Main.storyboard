@@ -17,9 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GBk-Wu-jLZ">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GBk-Wu-jLZ">
                                 <rect key="frame" x="0.0" y="44" width="414" height="695.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6hf-ew-WnE">
                                     <size key="itemSize" width="414" height="679"/>
@@ -75,10 +74,13 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KD1-tM-f4K">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KD1-tM-f4K">
                                 <rect key="frame" x="132" y="792" width="150" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.64713541666666663" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fQ5-fy-sS6"/>
+                                    <constraint firstAttribute="width" constant="150" id="v4q-LZ-pkh"/>
+                                </constraints>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -91,15 +93,25 @@
                                     <action selector="btnNextTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j5d-Z7-55C"/>
                                 </connections>
                             </button>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="dqf-TZ-rEn">
-                                <rect key="frame" x="146" y="749.5" width="122.5" height="27.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="dqf-TZ-rEn">
+                                <rect key="frame" x="20" y="749.5" width="374" height="27.5"/>
                                 <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" red="0.87843137979999997" green="0.22745099660000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KD1-tM-f4K" firstAttribute="top" secondItem="dqf-TZ-rEn" secondAttribute="bottom" constant="15" id="1qD-3j-leh"/>
+                            <constraint firstItem="GBk-Wu-jLZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1z7-Hx-Bze"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dqf-TZ-rEn" secondAttribute="trailing" constant="20" id="MCM-wg-JSm"/>
+                            <constraint firstItem="GBk-Wu-jLZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZbK-7f-YFy"/>
+                            <constraint firstItem="GBk-Wu-jLZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="b2S-LI-ItD"/>
+                            <constraint firstItem="dqf-TZ-rEn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ihI-wl-yWk"/>
+                            <constraint firstItem="KD1-tM-f4K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="krH-aI-aFc"/>
+                            <constraint firstItem="dqf-TZ-rEn" firstAttribute="top" secondItem="GBk-Wu-jLZ" secondAttribute="bottom" constant="10" id="miA-sa-rg1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KD1-tM-f4K" secondAttribute="bottom" constant="20" id="qmL-IF-WDx"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="btnNext" destination="KD1-tM-f4K" id="UbZ-sa-JNq"/>
