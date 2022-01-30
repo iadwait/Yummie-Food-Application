@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		DE4C381827A6467D00BCCEB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4C381727A6467D00BCCEB9 /* AppDelegate.swift */; };
 		DE4C381A27A6467D00BCCEB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4C381927A6467D00BCCEB9 /* SceneDelegate.swift */; };
-		DE4C381C27A6467D00BCCEB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4C381B27A6467D00BCCEB9 /* ViewController.swift */; };
 		DE4C381F27A6467D00BCCEB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4C381D27A6467D00BCCEB9 /* Main.storyboard */; };
 		DE4C382127A6467D00BCCEB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4C382027A6467D00BCCEB9 /* Assets.xcassets */; };
 		DE4C382427A6467D00BCCEB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4C382227A6467D00BCCEB9 /* LaunchScreen.storyboard */; };
+		DE4C382F27A64AA800BCCEB9 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4C382E27A64AA800BCCEB9 /* OnboardingViewController.swift */; };
+		DE4C383427A64D4E00BCCEB9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4C383327A64D4E00BCCEB9 /* Extensions.swift */; };
+		DE4C383927A64E5A00BCCEB9 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4C383827A64E5A00BCCEB9 /* OnboardingSlide.swift */; };
+		DE4C383F27A6516000BCCEB9 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4C383E27A6516000BCCEB9 /* OnboardingCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DE4C381427A6467D00BCCEB9 /* Yummie Food App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yummie Food App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE4C381727A6467D00BCCEB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE4C381927A6467D00BCCEB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DE4C381B27A6467D00BCCEB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE4C381E27A6467D00BCCEB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE4C382027A6467D00BCCEB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE4C382327A6467D00BCCEB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE4C382527A6467D00BCCEB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE4C382E27A64AA800BCCEB9 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		DE4C383327A64D4E00BCCEB9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = ../../../../Extensions.swift; sourceTree = "<group>"; };
+		DE4C383827A64E5A00BCCEB9 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		DE4C383E27A6516000BCCEB9 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,74 @@
 		DE4C381627A6467D00BCCEB9 /* Yummie Food App */ = {
 			isa = PBXGroup;
 			children = (
+				DE4C383227A64D3A00BCCEB9 /* Extensions */,
+				DE4C382C27A64A9200BCCEB9 /* Views */,
+				DE4C383627A64E3E00BCCEB9 /* Models */,
 				DE4C381727A6467D00BCCEB9 /* AppDelegate.swift */,
 				DE4C381927A6467D00BCCEB9 /* SceneDelegate.swift */,
-				DE4C381B27A6467D00BCCEB9 /* ViewController.swift */,
 				DE4C381D27A6467D00BCCEB9 /* Main.storyboard */,
 				DE4C382027A6467D00BCCEB9 /* Assets.xcassets */,
 				DE4C382227A6467D00BCCEB9 /* LaunchScreen.storyboard */,
 				DE4C382527A6467D00BCCEB9 /* Info.plist */,
 			);
 			path = "Yummie Food App";
+			sourceTree = "<group>";
+		};
+		DE4C382C27A64A9200BCCEB9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE4C382D27A64A9900BCCEB9 /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE4C382D27A64A9900BCCEB9 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				DE4C383D27A6514900BCCEB9 /* Cells */,
+				DE4C383B27A6513F00BCCEB9 /* Controller */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		DE4C383227A64D3A00BCCEB9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DE4C383327A64D4E00BCCEB9 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DE4C383627A64E3E00BCCEB9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE4C383727A64E4600BCCEB9 /* Onboarding */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DE4C383727A64E4600BCCEB9 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				DE4C383827A64E5A00BCCEB9 /* OnboardingSlide.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		DE4C383B27A6513F00BCCEB9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE4C382E27A64AA800BCCEB9 /* OnboardingViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE4C383D27A6514900BCCEB9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DE4C383E27A6516000BCCEB9 /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +202,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE4C381C27A6467D00BCCEB9 /* ViewController.swift in Sources */,
+				DE4C383927A64E5A00BCCEB9 /* OnboardingSlide.swift in Sources */,
 				DE4C381827A6467D00BCCEB9 /* AppDelegate.swift in Sources */,
 				DE4C381A27A6467D00BCCEB9 /* SceneDelegate.swift in Sources */,
+				DE4C382F27A64AA800BCCEB9 /* OnboardingViewController.swift in Sources */,
+				DE4C383427A64D4E00BCCEB9 /* Extensions.swift in Sources */,
+				DE4C383F27A6516000BCCEB9 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
