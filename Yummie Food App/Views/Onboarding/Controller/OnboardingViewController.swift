@@ -33,6 +33,7 @@ class OnboardingViewController: UIViewController {
         super.viewDidLoad()
         pageControl.isUserInteractionEnabled = false
         getOnboardingData()
+        pageControl.numberOfPages = arrSlideData.count
         configureCollectionView()
     }
     
