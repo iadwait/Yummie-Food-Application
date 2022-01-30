@@ -26,6 +26,8 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     
     // MARK: - User Defined Functions
     
+    /// Function Call to Setup UI
+    /// - Parameter categoryData: Category Data
     func setupUI(categoryData: DishCategory) {
         self.lblTitle.text = categoryData.name
         self.imgView.kf.setImage(with: categoryData.image.asURL)

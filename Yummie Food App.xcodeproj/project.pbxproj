@@ -22,6 +22,9 @@
 		DE4C385427A6A56500BCCEB9 /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4C385327A6A56500BCCEB9 /* DishCategory.swift */; };
 		DE5328CD27A6A6950078F7EE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5328CC27A6A6950078F7EE /* Extensions.swift */; };
 		DE5328D427A6ADBB0078F7EE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5328D327A6ADBB0078F7EE /* CardView.swift */; };
+		DE5328DD27A6C4B90078F7EE /* DishesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5328DB27A6C4B90078F7EE /* DishesCollectionViewCell.swift */; };
+		DE5328DE27A6C4B90078F7EE /* DishesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE5328DC27A6C4B90078F7EE /* DishesCollectionViewCell.xib */; };
+		DE5328E127A6C5C20078F7EE /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5328E027A6C5C20078F7EE /* Dish.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		DE4C385327A6A56500BCCEB9 /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
 		DE5328CC27A6A6950078F7EE /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DE5328D327A6ADBB0078F7EE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		DE5328DB27A6C4B90078F7EE /* DishesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE5328DC27A6C4B90078F7EE /* DishesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishesCollectionViewCell.xib; sourceTree = "<group>"; };
+		DE5328E027A6C5C20078F7EE /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +195,7 @@
 		DE4C384927A6A2A500BCCEB9 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				DE5328D627A6C4600078F7EE /* DishesCollectionViewCell */,
 				DE4C384A27A6A2B500BCCEB9 /* CategoryCollectionViewCell */,
 			);
 			path = CollectionViewCells;
@@ -207,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				DE4C385327A6A56500BCCEB9 /* DishCategory.swift */,
+				DE5328E027A6C5C20078F7EE /* Dish.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -217,6 +225,15 @@
 				DE5328D327A6ADBB0078F7EE /* CardView.swift */,
 			);
 			path = CardView;
+			sourceTree = "<group>";
+		};
+		DE5328D627A6C4600078F7EE /* DishesCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE5328DB27A6C4B90078F7EE /* DishesCollectionViewCell.swift */,
+				DE5328DC27A6C4B90078F7EE /* DishesCollectionViewCell.xib */,
+			);
+			path = DishesCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		ECD050BF09C12AAD5FB451A9 /* Frameworks */ = {
@@ -290,6 +307,7 @@
 				DE4C382427A6467D00BCCEB9 /* LaunchScreen.storyboard in Resources */,
 				DE4C382127A6467D00BCCEB9 /* Assets.xcassets in Resources */,
 				DE4C381F27A6467D00BCCEB9 /* Main.storyboard in Resources */,
+				DE5328DE27A6C4B90078F7EE /* DishesCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,11 +363,13 @@
 				DE4C384D27A6A2E200BCCEB9 /* CategoryCollectionViewCell.swift in Sources */,
 				DE5328CD27A6A6950078F7EE /* Extensions.swift in Sources */,
 				DE4C383927A64E5A00BCCEB9 /* OnboardingSlide.swift in Sources */,
+				DE5328DD27A6C4B90078F7EE /* DishesCollectionViewCell.swift in Sources */,
 				DE4C381827A6467D00BCCEB9 /* AppDelegate.swift in Sources */,
 				DE5328D427A6ADBB0078F7EE /* CardView.swift in Sources */,
 				DE4C381A27A6467D00BCCEB9 /* SceneDelegate.swift in Sources */,
 				DE4C382F27A64AA800BCCEB9 /* OnboardingViewController.swift in Sources */,
 				DE4C384527A69AA400BCCEB9 /* HomeViewController.swift in Sources */,
+				DE5328E127A6C5C20078F7EE /* Dish.swift in Sources */,
 				DE4C385427A6A56500BCCEB9 /* DishCategory.swift in Sources */,
 				DE4C383F27A6516000BCCEB9 /* OnboardingCollectionViewCell.swift in Sources */,
 			);

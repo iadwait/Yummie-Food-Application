@@ -12,6 +12,7 @@ class HomeViewController: UIViewController {
 
     // MARK: - IBOutlets
     @IBOutlet weak var collectionViewCategory: UICollectionView!
+    @IBOutlet weak var collectionViewPopularDishes: UICollectionView!
     
     // MARK: - Variable Declarations
     var arrCategory: [DishCategory] = [
@@ -20,6 +21,14 @@ class HomeViewController: UIViewController {
         DishCategory(id: "Id1", name: "Indian Dish 3", image: "https://picsum.photos/100/200"),
         DishCategory(id: "Id1", name: "Indian Dish 4", image: "https://picsum.photos/100/200"),
         DishCategory(id: "Id1", name: "Indian Dish 5", image: "https://picsum.photos/100/200")
+    ]
+    
+    var arrDishes: [Dish] = [
+        Dish(id: "Id1", name: "Peppy Panner Pizza", image: "https://picsum.photos/100/200", description: "The Dish is rated 5 Stars by Customers.Give it a Try !!", calorie: 120),
+        Dish(id: "Id1", name: "Peppy Panner Pizza", image: "https://picsum.photos/100/200", description: "The Dish is rated 5 Stars by Customers.Give it a Try !!", calorie: 120),
+        Dish(id: "Id1", name: "Peppy Panner Pizza", image: "https://picsum.photos/100/200", description: "The Dish is rated 5 Stars by Customers.Give it a Try !!", calorie: 120),
+        Dish(id: "Id1", name: "Peppy Panner Pizza", image: "https://picsum.photos/100/200", description: "The Dish is rated 5 Stars by Customers.Give it a Try !!", calorie: 120),
+        Dish(id: "Id1", name: "Peppy Panner Pizza", image: "https://picsum.photos/100/200", description: "The Dish is rated 5 Stars by Customers.Give it a Try !!", calorie: 120),
     ]
     
     // MARK: - View's Initialization Methods
@@ -50,6 +59,19 @@ class HomeViewController: UIViewController {
         collectionViewCategory.collectionViewLayout = layout
         // Content Padding
         collectionViewCategory.contentInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
+        
+        // Register Xib
+        collectionViewPopularDishes.register(UINib(nibName: DishesCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: DishesCollectionViewCell.identifier)
+        // Set Delegate, DataSource
+        collectionViewPopularDishes.delegate = self
+        collectionViewPopularDishes.dataSource = self
+        // Setup UI
+        let layout1 = UICollectionViewFlowLayout()
+        layout1.scrollDirection = .horizontal
+        collectionViewPopularDishes.collectionViewLayout = layout1
+        collectionViewPopularDishes.showsHorizontalScrollIndicator = false
+        // Content Padding
+        collectionViewPopularDishes.contentInset = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)
     }
     
     // MARK: - IBActions
@@ -62,26 +84,51 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return arrCategory.count
+        if collectionView == collectionViewCategory {
+            return arrCategory.count
+        } else if collectionView == collectionViewPopularDishes {
+            return arrDishes.count
+        }
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identifier, for: indexPath) as! CategoryCollectionViewCell
-        let data = arrCategory[indexPath.row]
-        cell.setupUI(categoryData: data)
-        if indexPath.row == 0 {
-//            cell.viewBG.backgroundColor = .red
+        // Category Collection View
+        if collectionView == collectionViewCategory {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identifier, for: indexPath) as! CategoryCollectionViewCell
+            let data = arrCategory[indexPath.row]
+            cell.setupUI(categoryData: data)
+            return cell
         }
-        return cell
+        // Popular Dishes Collection View
+        else if collectionView == collectionViewPopularDishes {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DishesCollectionViewCell.identifier, for: indexPath) as! DishesCollectionViewCell
+            let data = arrDishes[indexPath.row]
+            cell.setupUI(dishData: data)
+            return cell
+        }
+        // Chef's Special Collection View
+        else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identifier, for: indexPath) as! CategoryCollectionViewCell
+            return cell
+        }
     }
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 200, height: 55)
+        if collectionView == collectionViewCategory {
+            return CGSize(width: 200, height: 55)
+        } else {
+            return CGSize(width: 240, height: 369)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
+        if collectionView == collectionViewCategory {
+            return 10
+        } else {
+            return 0
+        }
     }
     
 }
