@@ -16,6 +16,7 @@
 		DE4C383427A64D4E00BCCEB9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4C383327A64D4E00BCCEB9 /* Extensions.swift */; };
 		DE4C383927A64E5A00BCCEB9 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4C383827A64E5A00BCCEB9 /* OnboardingSlide.swift */; };
 		DE4C383F27A6516000BCCEB9 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4C383E27A6516000BCCEB9 /* OnboardingCollectionViewCell.swift */; };
+		DE4C384527A69AA400BCCEB9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4C384427A69AA400BCCEB9 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		DE4C383327A64D4E00BCCEB9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = ../../../../Extensions.swift; sourceTree = "<group>"; };
 		DE4C383827A64E5A00BCCEB9 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		DE4C383E27A6516000BCCEB9 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE4C384427A69AA400BCCEB9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				DE4C382D27A64A9900BCCEB9 /* Onboarding */,
+				DE4C384227A69A8F00BCCEB9 /* Home */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -130,6 +133,22 @@
 				DE4C383E27A6516000BCCEB9 /* OnboardingCollectionViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		DE4C384227A69A8F00BCCEB9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DE4C384327A69A9600BCCEB9 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DE4C384327A69A9600BCCEB9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE4C384427A69AA400BCCEB9 /* HomeViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +226,7 @@
 				DE4C381A27A6467D00BCCEB9 /* SceneDelegate.swift in Sources */,
 				DE4C382F27A64AA800BCCEB9 /* OnboardingViewController.swift in Sources */,
 				DE4C383427A64D4E00BCCEB9 /* Extensions.swift in Sources */,
+				DE4C384527A69AA400BCCEB9 /* HomeViewController.swift in Sources */,
 				DE4C383F27A6516000BCCEB9 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
