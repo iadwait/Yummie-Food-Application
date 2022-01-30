@@ -259,6 +259,9 @@
                             <color key="tintColor" red="0.87843137979999997" green="0.22745099660000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="collectionViewCategory" destination="WZw-2c-Fgx" id="PcW-uB-8Vo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qga-rO-pB7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
