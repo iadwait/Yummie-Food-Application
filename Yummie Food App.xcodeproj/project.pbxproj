@@ -10,6 +10,7 @@
 		958474813F5FC48F48A843D6 /* Pods_Yummie_Food_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6726D761EFA93CC7D3C58510 /* Pods_Yummie_Food_App.framework */; };
 		DE11F70527AEA25B00F902B3 /* ChefsSpecialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11F70327AEA25B00F902B3 /* ChefsSpecialCollectionViewCell.swift */; };
 		DE11F70627AEA25B00F902B3 /* ChefsSpecialCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE11F70427AEA25B00F902B3 /* ChefsSpecialCollectionViewCell.xib */; };
+		DE11F70B27AEABEA00F902B3 /* DishDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11F70A27AEABEA00F902B3 /* DishDetailsViewController.swift */; };
 		DE4C381827A6467D00BCCEB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4C381727A6467D00BCCEB9 /* AppDelegate.swift */; };
 		DE4C381A27A6467D00BCCEB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4C381927A6467D00BCCEB9 /* SceneDelegate.swift */; };
 		DE4C381F27A6467D00BCCEB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4C381D27A6467D00BCCEB9 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		6726D761EFA93CC7D3C58510 /* Pods_Yummie_Food_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yummie_Food_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE11F70327AEA25B00F902B3 /* ChefsSpecialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefsSpecialCollectionViewCell.swift; sourceTree = "<group>"; };
 		DE11F70427AEA25B00F902B3 /* ChefsSpecialCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChefsSpecialCollectionViewCell.xib; sourceTree = "<group>"; };
+		DE11F70A27AEABEA00F902B3 /* DishDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailsViewController.swift; sourceTree = "<group>"; };
 		DE4C381427A6467D00BCCEB9 /* Yummie Food App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yummie Food App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE4C381727A6467D00BCCEB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE4C381927A6467D00BCCEB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,22 @@
 			path = ChefSpecialCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		DE11F70827AEABC800F902B3 /* DishDetails */ = {
+			isa = PBXGroup;
+			children = (
+				DE11F70927AEABDA00F902B3 /* Controller */,
+			);
+			path = DishDetails;
+			sourceTree = "<group>";
+		};
+		DE11F70927AEABDA00F902B3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE11F70A27AEABEA00F902B3 /* DishDetailsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		DE4C380B27A6467D00BCCEB9 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +144,7 @@
 			children = (
 				DE4C382D27A64A9900BCCEB9 /* Onboarding */,
 				DE4C384227A69A8F00BCCEB9 /* Home */,
+				DE11F70827AEABC800F902B3 /* DishDetails */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -384,6 +403,7 @@
 				DE11F70527AEA25B00F902B3 /* ChefsSpecialCollectionViewCell.swift in Sources */,
 				DE4C381A27A6467D00BCCEB9 /* SceneDelegate.swift in Sources */,
 				DE4C382F27A64AA800BCCEB9 /* OnboardingViewController.swift in Sources */,
+				DE11F70B27AEABEA00F902B3 /* DishDetailsViewController.swift in Sources */,
 				DE4C384527A69AA400BCCEB9 /* HomeViewController.swift in Sources */,
 				DE5328E127A6C5C20078F7EE /* Dish.swift in Sources */,
 				DE4C385427A6A56500BCCEB9 /* DishCategory.swift in Sources */,

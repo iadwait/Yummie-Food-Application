@@ -140,6 +140,10 @@ extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSourc
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let dishDetailsVC = storyboard?.instantiateViewController(withIdentifier: "DishDetailsViewController") as! DishDetailsViewController
+        navigationController?.pushViewController(dishDetailsVC, animated: true)
+    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == collectionViewCategory {
