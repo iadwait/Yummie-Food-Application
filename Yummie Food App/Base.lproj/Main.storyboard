@@ -269,6 +269,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="collectionViewCategory" destination="WZw-2c-Fgx" id="PcW-uB-8Vo"/>
+                        <outlet property="collectionViewChefsSpecial" destination="qJN-8Y-wkG" id="nOc-ir-wPr"/>
                         <outlet property="collectionViewPopularDishes" destination="TCP-I7-nTt" id="Hfh-hw-svK"/>
                     </connections>
                 </viewController>

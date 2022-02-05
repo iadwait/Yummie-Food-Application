@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		958474813F5FC48F48A843D6 /* Pods_Yummie_Food_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6726D761EFA93CC7D3C58510 /* Pods_Yummie_Food_App.framework */; };
+		DE11F70527AEA25B00F902B3 /* ChefsSpecialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11F70327AEA25B00F902B3 /* ChefsSpecialCollectionViewCell.swift */; };
+		DE11F70627AEA25B00F902B3 /* ChefsSpecialCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE11F70427AEA25B00F902B3 /* ChefsSpecialCollectionViewCell.xib */; };
 		DE4C381827A6467D00BCCEB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4C381727A6467D00BCCEB9 /* AppDelegate.swift */; };
 		DE4C381A27A6467D00BCCEB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4C381927A6467D00BCCEB9 /* SceneDelegate.swift */; };
 		DE4C381F27A6467D00BCCEB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4C381D27A6467D00BCCEB9 /* Main.storyboard */; };
@@ -31,6 +33,8 @@
 		08A704BFB25179348D3F2F61 /* Pods-Yummie Food App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yummie Food App.debug.xcconfig"; path = "Target Support Files/Pods-Yummie Food App/Pods-Yummie Food App.debug.xcconfig"; sourceTree = "<group>"; };
 		5D34E19C796D6F13AD95291D /* Pods-Yummie Food App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yummie Food App.release.xcconfig"; path = "Target Support Files/Pods-Yummie Food App/Pods-Yummie Food App.release.xcconfig"; sourceTree = "<group>"; };
 		6726D761EFA93CC7D3C58510 /* Pods_Yummie_Food_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yummie_Food_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE11F70327AEA25B00F902B3 /* ChefsSpecialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefsSpecialCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE11F70427AEA25B00F902B3 /* ChefsSpecialCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChefsSpecialCollectionViewCell.xib; sourceTree = "<group>"; };
 		DE4C381427A6467D00BCCEB9 /* Yummie Food App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yummie Food App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE4C381727A6467D00BCCEB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE4C381927A6467D00BCCEB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,15 @@
 				5D34E19C796D6F13AD95291D /* Pods-Yummie Food App.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DE11F70227AEA23000F902B3 /* ChefSpecialCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE11F70327AEA25B00F902B3 /* ChefsSpecialCollectionViewCell.swift */,
+				DE11F70427AEA25B00F902B3 /* ChefsSpecialCollectionViewCell.xib */,
+			);
+			path = ChefSpecialCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		DE4C380B27A6467D00BCCEB9 = {
@@ -195,6 +208,7 @@
 		DE4C384927A6A2A500BCCEB9 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				DE11F70227AEA23000F902B3 /* ChefSpecialCollectionViewCell */,
 				DE5328D627A6C4600078F7EE /* DishesCollectionViewCell */,
 				DE4C384A27A6A2B500BCCEB9 /* CategoryCollectionViewCell */,
 			);
@@ -303,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE11F70627AEA25B00F902B3 /* ChefsSpecialCollectionViewCell.xib in Resources */,
 				DE4C384E27A6A2E200BCCEB9 /* CategoryCollectionViewCell.xib in Resources */,
 				DE4C382427A6467D00BCCEB9 /* LaunchScreen.storyboard in Resources */,
 				DE4C382127A6467D00BCCEB9 /* Assets.xcassets in Resources */,
@@ -366,6 +381,7 @@
 				DE5328DD27A6C4B90078F7EE /* DishesCollectionViewCell.swift in Sources */,
 				DE4C381827A6467D00BCCEB9 /* AppDelegate.swift in Sources */,
 				DE5328D427A6ADBB0078F7EE /* CardView.swift in Sources */,
+				DE11F70527AEA25B00F902B3 /* ChefsSpecialCollectionViewCell.swift in Sources */,
 				DE4C381A27A6467D00BCCEB9 /* SceneDelegate.swift in Sources */,
 				DE4C382F27A64AA800BCCEB9 /* OnboardingViewController.swift in Sources */,
 				DE4C384527A69AA400BCCEB9 /* HomeViewController.swift in Sources */,
